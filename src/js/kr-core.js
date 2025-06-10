@@ -16,7 +16,7 @@ import "./kr-polyfill";
 
       // 复制成功，庆祝一下
       const origInner = triggerBtn.innerHTML;
-      triggerBtn.innerHTML = `<i class="fa fa-check-circle"></i>&nbsp;成功~`;
+      triggerBtn.innerHTML = `<i class="fa fa-check-circle"></i>&nbsp;已複製！`;
       setTimeout(() => {
         triggerBtn.innerHTML = origInner;
       }, 3000);
@@ -227,7 +227,7 @@ import "./kr-polyfill";
         .getElementsByClassName("code")[0];
       const copyButton = document.createElement("button");
       copyButton.className = "copy-code";
-      copyButton.innerHTML = `<i class="fa fa-copy"></i>&nbsp;复制`;
+      copyButton.innerHTML = `<i class="fa fa-copy"></i>&nbsp;複製`;
       copyButton.onclick = copyCode.bind(null, copyButton, codeElem);
       figure.appendChild(copyButton);
     });
@@ -237,7 +237,7 @@ import "./kr-polyfill";
       const codeElem = codeBlock.querySelector("code");
       const copyButton = document.createElement("button");
       copyButton.className = "copy-code";
-      copyButton.innerHTML = `<i class="fa fa-copy"></i>&nbsp;复制`;
+      copyButton.innerHTML = `<i class="fa fa-copy"></i>&nbsp;複製`;
       copyButton.onclick = copyCode.bind(null, copyButton, codeElem);
       codeBlock.appendChild(copyButton);
     });
