@@ -13,9 +13,9 @@ title:
 read_full: 閱讀全文
 comment: 評論
 list_page_count_message:
-  archive: 目前共有 %d 篇文章 (゜-゜)つロ 乾杯~
-  tags: 目前共有 %d 個標籤 (゜-゜)つロ 乾杯~
-  categories: 目前共有 %d 種分類 (゜-゜)つロ 乾杯~
+  archive: 目前共有 %d 篇文章
+  tags: 目前共有 %d 個Tag
+  categories: 目前共有 %d 種分類
 page_no: 第 %d 頁
 post_next: 上一篇
 post_prev: 下一篇
@@ -34,8 +34,8 @@ last_update_alert: 本文最後編輯於 %s 前，其中的內容可能需要更
 no_title: 無標題
 footer_components:
   copyright: 版權所有
-  theme_name: 自豪地使用 %s 主題
-  site_built_with_love: 網站由 %s 以 <i class="fa fa-heart" style="color:#d43f57"></i> 建構
+  theme_name: 本站採用 %s 主題
+  site_built_with_love: 網站由 %s 建構
 search:
   submit: 找一找~
   notice:
