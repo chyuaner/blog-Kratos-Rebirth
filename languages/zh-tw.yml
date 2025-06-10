@@ -1,0 +1,45 @@
+title:
+  archive: 文章歸檔
+  category: 分類
+  tag: 標籤
+  tagcloud: 標籤聚合
+  search: 搜尋
+  not_found: 這個頁面走丟了呢…
+  status: 看動態
+  categories_list: 分類列表
+  post: 文章
+  recent_posts: 最新文章
+  toc: 文章目錄
+read_full: 閱讀全文
+comment: 評論
+list_page_count_message:
+  archive: 目前共有 %d 篇文章 (゜-゜)つロ 乾杯~
+  tags: 目前共有 %d 個標籤 (゜-゜)つロ 乾杯~
+  categories: 目前共有 %d 種分類 (゜-゜)つロ 乾杯~
+page_no: 第 %d 頁
+post_next: 上一篇
+post_prev: 下一篇
+post_action:
+  share: 分享
+  donate: 打賞
+  read_more: 繼續閱讀
+post_meta:
+  author: 作者
+  read_count: "%s 次閱讀"
+  comments_count: "%s 則評論"
+  category_in: 分類於
+  words: 字
+last_update: 最後編輯：
+last_update_alert: 本文最後編輯於 %s 前，其中的內容可能需要更新。
+no_title: 無標題
+footer_components:
+  copyright: 版權所有
+  theme_name: 自豪地使用 %s 主題
+  site_built_with_love: 網站由 %s 以 <i class="fa fa-heart" style="color:#d43f57"></i> 建構
+search:
+  submit: 找一找~
+  notice:
+    welcome: 有什麼想找找看的呢o(*￣▽￣*)ブ
+    page: 這裡是 %s 的搜尋引擎~
+    keywords: 搜尋多個關鍵字時請用空格分割，例如「%s」這樣；
+    tags: 您也可以使用這些標籤碰碰運氣哦~
