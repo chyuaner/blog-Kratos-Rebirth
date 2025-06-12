@@ -102,7 +102,7 @@
   const loadDataSearch = (searchDataFile, skeys) => {
     fetch(searchDataFile)
       .then((res) => {
-        setNotice("success", "文件加载完成，开始搜索啦~");
+        setNotice("success", "載入完成，開始搜尋囉～");
         if (typeof NProgress !== "undefined") {
           NProgress.inc();
         }
@@ -209,16 +209,16 @@
             "success",
             "找到 " +
               resultCount +
-              " 条搜索结果，用时 " +
+              " 條搜尋結果，花了 " +
               Math.round((finishTime - startTime) * 100) / 100 +
-              " 毫秒~",
+              " 毫秒～",
           );
           resultArray.sort((a, b) => {
             return b[1] - a[1];
           });
           createPosts(resultArray);
         } else {
-          setNotice("danger", "什么都没有找到欸...");
+          setNotice("danger", "什麼都沒找到欸...");
           clearPosts();
         }
         if (typeof NProgress !== "undefined") {
@@ -226,13 +226,13 @@
         }
       })
       .catch((error) => {
-        setNotice("danger", "错误 : " + error);
+        setNotice("danger", "錯誤： " + error);
       });
   };
 
   const keySearch = (skeys) => {
     // 设置搜索提示
-    setNotice("info", "正在加载搜索文件...");
+    setNotice("info", "正在載入中...");
 
     // 启动进度条
     if (typeof NProgress !== "undefined") {

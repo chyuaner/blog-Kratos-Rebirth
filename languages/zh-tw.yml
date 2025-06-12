@@ -1,8 +1,8 @@
 title:
   archive: 文章歸檔
   category: 分類
-  tag: 標籤
-  tagcloud: 標籤聚合
+  tag: Tag
+  tagcloud: 所有的Tag
   search: 搜尋
   not_found: 這個頁面走丟了呢…
   status: 看動態
@@ -11,7 +11,7 @@ title:
   recent_posts: 最新文章
   toc: 文章目錄
 read_full: 閱讀全文
-comment: 評論
+comment: 留言
 list_page_count_message:
   archive: 目前共有 %d 篇文章
   tags: 目前共有 %d 個Tag
@@ -21,12 +21,12 @@ post_next: 上一篇
 post_prev: 下一篇
 post_action:
   share: 分享
-  donate: 打賞
+  donate: 贊助
   read_more: 繼續閱讀
 post_meta:
   author: 作者
   read_count: "%s 次閱讀"
-  comments_count: "%s 則評論"
+  comments_count: "%s 則留言"
   category_in: 分類於
   words: 字
 last_update: 最後編輯：
@@ -39,7 +39,7 @@ footer_components:
 search:
   submit: 找一找~
   notice:
-    welcome: 有什麼想找找看的呢o(*￣▽￣*)ブ
-    page: 這裡是 %s 的搜尋引擎~
-    keywords: 搜尋多個關鍵字時請用空格分割，例如「%s」這樣；
-    tags: 您也可以使用這些標籤碰碰運氣哦~
+    welcome: 有什麼想找的呢～ o(*￣▽￣*)ブ
+    page: 輸入關鍵字，就可以開始搜尋吧～
+    keywords: 搜尋多個關鍵字時請用空格分割
+    tags: 您也可以使用這些Tag碰碰運氣哦~
