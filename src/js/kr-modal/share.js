@@ -54,7 +54,7 @@ function initQRCode() {
         .getAttribute("content"),
       image: document.querySelector(`link[rel="icon"]`).getAttribute("href"),
       dotsOptions: {
-        color: "#78ce79",
+        color: "#000000",
         type: "extra-rounded",
       },
       backgroundOptions: {
