@@ -86,7 +86,6 @@ const buildJSOpts = {
     "src/js/kr-pjax.js",
     "src/js/kr-modal/donate.js",
     "src/js/kr-modal/share.js",
-    "src/js/calendar.js",
   ],
   outExtension: { ".js": ".min.js" },
   outdir: "source/js",
