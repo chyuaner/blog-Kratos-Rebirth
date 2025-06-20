@@ -7,6 +7,7 @@ const buildCSSOpts = {
   entryPoints: [
     // 核心样式
     "src/scss/kr-core.scss",
+    "src/scss/calendar.scss",
 
     // 配色主题
     "src/scss/kr-theme/light.scss",
@@ -85,6 +86,7 @@ const buildJSOpts = {
     "src/js/kr-pjax.js",
     "src/js/kr-modal/donate.js",
     "src/js/kr-modal/share.js",
+    "src/js/calendar.js",
   ],
   outExtension: { ".js": ".min.js" },
   outdir: "source/js",
