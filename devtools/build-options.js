@@ -7,7 +7,6 @@ const buildCSSOpts = {
   entryPoints: [
     // 核心样式
     "src/scss/kr-core.scss",
-    "src/scss/calendar.scss",
 
     // 配色主题
     "src/scss/kr-theme/light.scss",

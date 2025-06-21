@@ -48,7 +48,6 @@
   <% } %>
   <!-- 样式表文件 -->
   <%- css_theme_cdn('css/kr-core.min.css', {id: "kratos-css", media:"all"}) %>
-  <%- css_theme_cdn('css/calendar.min.css', {id: "kratos-css", media:"all"}) %>
   <% if (config.syntax_highlighter && theme.syntax_highlighter.theme) { %>
     <%- css_theme_cdn(`css/highlight/${config.syntax_highlighter}/${theme.syntax_highlighter.theme}.min.css`, {id: "highlight-css", media:"all"}) %>
   <% } %>
