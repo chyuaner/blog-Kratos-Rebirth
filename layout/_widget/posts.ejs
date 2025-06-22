@@ -10,7 +10,7 @@
           <% } %>
           <% if (post.title) { %>
             <% const cats = post.categories.toArray(); %>
-            <a class="list-group-item" href="<%- url_for(post.path) %>">
+            <a class="list-group-item" href="<%- url_for(post.path) %>" title="<%- post.title %>">
               <i class="fa fa-book"></i> <%- post.title %>
               <br><small>
                 <%- date(post.date, 'YYYY-MM-DD') %>
