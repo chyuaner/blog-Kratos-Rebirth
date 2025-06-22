@@ -9,7 +9,19 @@
             <% return false; %>
           <% } %>
           <% if (post.title) { %>
-            <a class="list-group-item" href="<%- url_for(post.path) %>"><i class="fa fa-book"></i> <%- post.title %></a>
+            <% const cats = post.categories.toArray(); %>
+            <a class="list-group-item" href="<%- url_for(post.path) %>">
+              <i class="fa fa-book"></i> <%- post.title %>
+              <br><small>
+                <%- date(post.date, 'YYYY-MM-DD') %>
+                <% if (cats.length > 0) { %>
+                  &nbsp;&nbsp;
+                  <i class="fa fa-folder"></i>
+                  <!-- <%= cats.map((cat, i) => `<a class="category-link" href="${url_for(cat.path)}">${cat.name}</a>`).join(', ') %> -->
+                  <%= cats.map((cat, i) => `${cat.name}`).join(', ') %>
+                <% } %></small>
+            </a>
+            
             <% limit--; %>
           <% } %>
         <% }) %>
