@@ -19,12 +19,13 @@
                   <!-- &nbsp;&nbsp;
                   <i class="fa fa-folder"></i> -->
                   <!-- <%= cats.map((cat, i) => `<a class="category-link" href="${url_for(cat.path)}">${cat.name}</a>`).join(', ') %> -->
-                  <%= cats.map((cat, i) => `${cat.name}`).join(', ') %>
-                  &nbsp;‧&nbsp;
-                  <!-- &nbsp;&nbsp;
-                  <i class="fa-regular fa-comment-dots"></i> -->
-                  <%- __('post_meta.comments_count', process_template_path(theme.comments.count.template._shared + theme.comments.count.template.index, post.path, "comments")) %>
-                <% } %></small>
+                <% } %>
+                <%= cats.map((cat, i) => `${cat.name}`).join(', ') %>
+                &nbsp;‧&nbsp;
+                <!-- &nbsp;&nbsp;
+                <i class="fa-regular fa-comment-dots"></i> -->
+                <%- __('post_meta.comments_count', process_template_path(theme.comments.count.template._shared + theme.comments.count.template.index, post.path, "comments")) %>
+                </small>
             </a>
             
             <% limit--; %>
