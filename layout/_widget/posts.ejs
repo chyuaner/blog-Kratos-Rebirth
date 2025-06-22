@@ -15,12 +15,14 @@
               <br><small>
                 <%- date(post.date, 'YYYY-MM-DD') %>
                 <% if (cats.length > 0) { %>
-                  &nbsp;&nbsp;
-                  <i class="fa fa-folder"></i>
+                  &nbsp;‧&nbsp;
+                  <!-- &nbsp;&nbsp;
+                  <i class="fa fa-folder"></i> -->
                   <!-- <%= cats.map((cat, i) => `<a class="category-link" href="${url_for(cat.path)}">${cat.name}</a>`).join(', ') %> -->
                   <%= cats.map((cat, i) => `${cat.name}`).join(', ') %>
-                  &nbsp;&nbsp;
-                  <i class="fa-regular fa-comment-dots"></i>
+                  &nbsp;‧&nbsp;
+                  <!-- &nbsp;&nbsp;
+                  <i class="fa-regular fa-comment-dots"></i> -->
                   <%- __('post_meta.comments_count', process_template_path(theme.comments.count.template._shared + theme.comments.count.template.index, post.path, "comments")) %>
                 <% } %></small>
             </a>
