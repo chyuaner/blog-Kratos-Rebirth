@@ -50,6 +50,12 @@
         <div class="col-md-5 text-center errtxt">
             <h3>404 沒有這個頁面喔～</h3>
             <h5>你迷路了嗎？要不要試著回到首頁找一找呀～？</h5>
+
+            <!-- 额外的追加注入项 -->
+            <% if (theme.additional_injections.page404_content) { %>
+              <%- theme.additional_injections.page404_content %>
+            <% } %>
+
             <p>
                 <a href="javascript:history.go(-1)" class="back-p">回到上一頁</a>
                 <a href="<%- url_for() %>" class="back-index">回到首頁</a>
