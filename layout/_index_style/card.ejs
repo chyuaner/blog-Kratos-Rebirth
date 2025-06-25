@@ -26,12 +26,20 @@
             <% } %>
             <div class="kratos-entry-post-inner">
                 <header class="kratos-entry-header">
+                    <%# 這是取得所有分類，先不啟用 %>
+                    <% if (false) { %>
                         <%- list_categories(post.categories, {
                             show_count: false,
                             class: 'label',
                             style: 'none',
                             separator: ' '
                         }) %>
+                    <% } %>
+
+                        <% if (post.categories && post.categories.length) { 
+                            const lastCat = post.categories.last(); %>
+                            <a class="label-link" href="<%= url_for(lastCat.path) %>"><%= lastCat.name %></a>
+                        <% } %>
                     <h2 class="kratos-entry-title"><a href="<%- url_for(post.path) %>" itemprop="mainEntityOfPage"><span itemprop="name headline"><%- post.title %></span></a>
                 </header>
                 <div class="kratos-entry-content">
